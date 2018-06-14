@@ -14,7 +14,10 @@ Run the script.
 
 	sudo ./rtorrent.auto.install-X.X.X-Ubuntu-16.04
 	
-That's it!
+**That's it!**
+
+Your rtorrent service is running and the Rutorrent web interface is at:
+`localhost/rutorrent`
 	
 Starting and Stopping Service
 -----------------------------
