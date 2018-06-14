@@ -8,15 +8,16 @@ Download the zip file version of this repo and set the extracted folder to you c
 
 Make it executable. 
 
-	chmod +x rtorrent.auto.install-X.X.X-Ubuntu-16.04
+`sudo chmod +x rtorrent.auto.install-4.0.0-Ubuntu-16.04`
 
 Run the script. 
 
-	sudo ./rtorrent.auto.install-X.X.X-Ubuntu-16.04
+`sudo ./rtorrent.auto.install-4.0.0-Ubuntu-16.04`
 	
 **That's it!**
 
 Your rtorrent service is running and the Rutorrent web interface is at:
+
 `localhost/rutorrent`
 	
 Starting and Stopping Service
