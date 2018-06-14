@@ -18,12 +18,12 @@ echo "  ------------------------------------------------------------------------
   can do whatever you want with this stuff. If we meet some day, and you think
   this stuff is worth it, you can buy me a beer in return.
 
-	- Patrick Kerwood @ LinuxBloggen.dk / re-edited by Frantz @ Wiity.net
+	- Patrick Kerwood @ LinuxBloggen.dk / Ported for Ubuntu by keberwein
   -----------------------------------------------------------------------------"
 echo
 echo
-echo "Is the OS on this server Ubuntu 14.04? If not, quit or continue at own risk."
-echo "And don't report a bug if it doesn't work. Press any key to continue."
+echo "Is the OS on this server Ubuntu 16.04+ or Mint 18+? If not, quit or continue at own risk."
+echo "Press any key to continue."
 echo
 read -p "Press [Enter] to continue..." -n 1
 echo
