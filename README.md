@@ -6,6 +6,8 @@ These are Bash scripts to ease the installation of rtorrent, rutorrent + plugins
 
 Download the zip file version of this repo and set the extracted folder to you current directory.
 
+`cd Downloads/Rtorrent-Auto-Install-master`
+
 Make it executable. 
 
 `sudo chmod +x rtorrent.auto.install-4.0.0-Ubuntu-16.04`
@@ -20,18 +22,21 @@ Your rtorrent service is running and the Rutorrent web interface is at:
 
 `localhost/rutorrent`
 	
-Starting and Stopping Service
------------------------------
+## Starting and Stopping Service
 
 The script adds rtorrent as a systemd service. It will be automatically started when the script finishes. To manually start/stop:
 
-    sudo systemctl start rtorrent
+`sudo systemctl start rtorrent`
     
-    sudo systemctl stop rtorrent
+`sudo systemctl stop rtorrent`
     
 To enable start-up at boot: This is NOT set by default.
 
-    sudo systemctl enable rtorrent
+`sudo systemctl enable rtorrent`
+    
+##Versions
+
+**Note:** This branch only maintains the Ubuntu/Mint version. For support for the Debian installs, please see the [master branch](https://github.com/Kerwood/Rtorrent-Auto-Install)
 
 **Ubuntu 16.04**
 This will work on the `systemd` versions of Ubuntu and Mint. It should be good on anything after Ubuntu 16.04 or Mint 18.0.
@@ -53,31 +58,6 @@ Also you will get the opportunity of installing a total of 46 plugins. See list 
 The script add a init script that makes rtorrent start, at a possible reboot, in the
 given username's screen/tmux session. Use "service rtorrent-init start" and
 "service rtorrent-init stop" to start and stop rtorrent respectively.
-
-
-Installation
-------------
-
-Installation video - https://www.youtube.com/watch?v=3iwsoKcUgn0
-
-Actual version for the scripts: 
-- Wheezy **4.0.0**
-- Jessie **4.0.0**
-- ~~Raspbian 3.0.2~~ - Not maintained, you can find it in the RaspberryPi branch.
-- ~~Raspbian Nginx 1.1.0~~ Not maintained, you can find it in the RaspberryPi branch.
-
-Download the script. Remember to change the X.X.X to the actual version.
-
-	wget https://raw.githubusercontent.com/Kerwood/rtorrent.auto.install/master/Rtorrent-Auto-Install-X.X.X-Debian-Wheezy
-
-Make it executable.
-
-	chmod +x Rtorrent-Auto-Install-X.X.X-Debian-Wheezy
-
-Run the script.
-
-	sudo ./Rtorrent-Auto-Install-X.X.X-Debian-Wheezy
-
 
 Installs
 --------
@@ -160,8 +140,7 @@ Install rutorrent-3.6 from novik65 official site.
 - 47 - All Plugins v3.6, More info at https://bintray.com/novik65/generic/ruTorrent
 
 
-Plugin Installation only
-------------------------
+## Plugin Installation only
 
 Exist a script that install only plugin, this is for the peoples then want to install some plugins instead to reinstall xmlrpc-c, libtorrent and rtorrent.
 
@@ -170,15 +149,15 @@ Actual version for the script:
 
 Download the script. Remember to change the X.X to the actual version.
 
-	wget https://raw.githubusercontent.com/Kerwood/rtorrent.auto.install/master/Plugins-installer-script-X.X
+`wget https://raw.githubusercontent.com/Kerwood/rtorrent.auto.install/master/Plugins-installer-script-X.X   
 
 Make it executable.
 
-	chmod +x Plugins-installer-script-X.X
+`chmod +x Plugins-installer-script-X.X`
 
 Run the script.
 
-	sudo ./Plugins-installer-script-X.X
+`sudo ./Plugins-installer-script-X.X`
 
 
 Login box does not appear after install!!!
