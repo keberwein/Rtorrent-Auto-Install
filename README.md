@@ -1,20 +1,36 @@
 
-# Rtorrent + Rutorrent Auto Install Script by Patrick Kerwood
-
-http://LinuxBloggen.dk/
-
-**This is script is no longer maintained and there will not be a release for Debian 9, because of the fabulous container technology that is available in this modern time. If you haven't alrady become familiar with this technology, you might as well begin now. Developers world wide are releasing more and more products as containers, as is my Rutorrent script.**
-
-**Containers just make is easier for everyone.**
-
-[Install Docker today](https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce)
-
-## Docker
-Check out the Rtorrent + Rutorrent Docker container. Get started with rtorrent in just seconds.  
-[https://github.com/Kerwood/Rtorrent-LXC](https://github.com/Kerwood/Rtorrent-LXC)
+# Rtorrent + Rutorrent Auto Install Script for Ubuntu and Mint
 
 ## Manual install
 These are Bash scripts to ease the installation of rtorrent, rutorrent + plugins.
+
+Download the zip file version of this repo and set the extracted folder to you current directory.
+
+Make it executable. 
+
+	chmod +x rtorrent.auto.install-X.X.X-Ubuntu-16.04
+
+Run the script. 
+
+	sudo ./rtorrent.auto.install-X.X.X-Ubuntu-16.04
+	
+That's it!
+	
+Starting and Stopping Service
+-----------------------------
+
+The script adds rtorrent as a systemd service. It will be automatically started when the script finishes. To manually start/stop:
+
+    sudo systemctl start rtorrent
+    
+    sudo systemctl stop rtorrent
+    
+To enable start-up at boot: This is NOT set by default.
+
+    sudo systemctl enable rtorrent
+
+**Ubuntu 16.04**
+This will work on the `systemd` versions of Ubuntu and Mint. It should be good on anything after Ubuntu 16.04 or Mint 18.0.
 
 **Debian Wheezy**
 The Wheezy script is of course developed for Wheezy but should run just fine on Ubuntu 13.04 and 14.04.
